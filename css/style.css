@@ -1,0 +1,1348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.testimonialSection, .valueSection, .gridSection {
+  width: 100%;
+  margin: auto;
+  padding: 5rem 9.375rem;
+  height: auto;
+}
+
+@font-face {
+  font-family: "akazan";
+  src: url(../fonts/Akazan\ Regular.ttf);
+}
+/* navbar */
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0B9586;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 9.375rem;
+}
+
+.itemsContainer {
+  display: flex;
+  gap: .7rem;
+}
+
+.menuItem {
+  padding: 1rem;
+}
+
+.menuLink {
+  padding: .5rem 1.5rem;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.menuLink:hover {
+  background-color: #0000004D;
+  border-radius: 0.313rem;
+  border-bottom: 3px solid #0000004D;
+  font-weight: 600;
+}
+
+.contactContainer {
+  text-align-last: right;
+  color: #fff;
+  font-family: "inter", sans-serif;
+}
+
+.contactContainer h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.contactContainer a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* hero section */
+.heroSection {
+  background-image: url("../media/solar-panels-meadow-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 4rem 9.3688rem 4rem 9.688rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19rem; 
+  margin-bottom: 6rem;
+  padding: .313rem;
+}
+
+.num {
+  font-family: "akazan", sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff; 
+}
+
+.progress-bar {
+  flex: 1;
+  height: .25rem; 
+  margin: 0 .75rem;
+  background-color: #575757; 
+  overflow: hidden;
+}
+
+.progress {
+  width: 30%; 
+  height: 100%;
+  background-color: #ffffff; 
+}
+
+.textSec {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 55%;
+  font-family: "inter", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.textSec h2 {
+  font-size: 3.25rem;
+  padding-bottom: 2rem;
+}
+
+.textSec p {
+  font-size: 1.125rem;
+  padding-bottom: 1.5rem;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnCall, .btnRequest {
+  padding: .75rem 2.125rem;
+  border-radius: 6.813rem;
+  border: none;
+  font-family: "inter", sans-serif;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.btnCall {
+  background-color: #3CAB90;
+  color: #fff;
+}
+
+.btnCall:hover {
+  background-color: #3cab8fe8;
+}
+
+.btnRequest {
+  background-color: #FFBB1C;
+  color: #000;
+}
+
+.btnRequest:hover {
+  background-color: #ffbb1cda;
+}
+/* intro section */
+.introSection {
+  width: 100%;
+  margin: auto;
+  padding: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.introText {
+  width: 100%;
+  flex: auto;
+  font-family: "inter", sans-serif;
+  color: #000000;
+}
+
+.introText h2 {
+  font-size: 2.625rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+.introText p {
+  font-size: 1rem;
+  color: #475467;
+  padding-bottom: 2rem;
+}
+
+.introText span {
+  color: #84BD3A;
+  font-family: "akazan", sans-serif;
+}
+
+.introText h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.introImg {
+  position: relative;
+}
+
+.introImg img {
+  border-radius: .75rem;
+  padding-left: 3rem;
+}
+
+.introImg::before {
+  content: url("../media/Solar Charging.png") "\A The Piece That Sold Me On This Polarizing Trend";
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+  width: 13rem;
+  padding: 1.5rem;
+  background-color: #FFBB1C;
+  border-radius: .75rem;
+  white-space: pre-wrap;
+  text-align: start;
+  font-family: "akazan", sans-serif;
+  font-size: 1rem;
+  color: #2A3334;
+  line-height: 1.5;
+}
+/* call us section */
+.banner {
+  display: flex;
+  background-image: url("../media/81161.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  padding: 8rem;
+}
+
+.banner-content {
+  max-width: 60%;
+  font-family: "inter", sans-serif;
+}
+
+.banner-content h1 {
+  font-size: 2.625rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2.125rem;
+  font-size: 1rem;
+  border-radius: 6.813rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-call {
+  background-color: #FFBB1C;
+  color: #2A3334;
+}
+
+.btn-call:hover {
+  background-color: #ffbb1cde;
+}
+/* kits section */
+.kitsSection {
+  width: 100%;
+  margin: auto;
+}
+
+.kitsText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 14rem;
+  gap: 1.5rem;
+  width: 100%;
+  font-family: "inter", sans-serif;
+}
+
+.kitsText h2 {
+  color: #101828;
+  font-weight: 600;
+  font-size: 2.625rem;
+}
+
+.kitsText p {
+  color: #475467;
+  font-size: 1rem;
+}
+
+.kitsCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.kitCard {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  box-shadow: 0px 4px 30px #0000000D;
+}
+
+.kitInfo {
+  padding: 1.25rem;
+  font-family: "inter", sans-serif;
+  line-height: 1.5rem;
+}
+
+.kitInfo h3 {
+  color: #101828;
+  line-height: 1.75;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.kitInfo p {
+  color: #475467;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.kitInfo a {
+  color: #3CAB90;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kitInfo a:hover {
+  text-decoration: underline;
+}
+/* repair section */
+.repairSection {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 8rem;
+  background-image: url("../media/81162.png");
+  margin-top: 2rem;
+}
+
+.repairBanner {
+  border-radius: .75rem;
+  background-color: #00000091;
+  backdrop-filter: blur(.5rem);
+  padding: 2.75rem;
+  width: 75%;
+  color: #fff;
+  font-family: "inter", sans-serif;
+}
+
+.repairBanner h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.repairBanner p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+/* grid section */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.gridText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  margin: auto;
+  gap: 1rem;
+  width: 100%;
+  font-family: "inter", sans-serif;
+}
+
+.gridText h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: #101828;
+  letter-spacing: -2.5px;
+}
+
+.gridText p {
+  color: #475467;
+  font-size: 1.125rem;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.gridCards {
+  border-radius: .75rem;
+  border: 1px solid #3CAB90;
+  padding: 1.5rem;
+  margin: 0 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #3CAB900D;
+  box-shadow: 0px 4px 30px #0000000D;
+}
+
+.gridCards img {
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  gap: 0.625rem;
+  background-color: #3CAB9026;
+}
+
+.gridCards h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #101828;
+}
+
+.gridCards p {
+  color: #475467;
+  font-size: 1rem;
+}
+
+.gridCards a {
+  color: #3CAB90;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.gridCards a:hover {
+  text-decoration: underline;
+}
+
+.gridFirst { grid-area: 1/1/1/1; }
+.gridSecond { grid-area: 1/2/1/2; }
+.gridThird { grid-area: 2/2/2/2; }
+.gridFourth { grid-area: 1/3/1/3; }
+.gridFifth { grid-area: 2/3/2/3; }
+/* value section */
+.valueText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 1rem;
+  width: 100%;
+  font-family: "inter", sans-serif;
+}
+
+.valueText h2 {
+  font-size: 2.625rem;
+  font-weight: 600;
+  color: #101828;
+}
+
+.valueText p {
+  color: #475467;
+  font-size: 1.125rem;
+}
+
+.valueCards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.valueCard {
+  border-radius: .75rem;
+  border: 1px solid #3CAB90;
+  background-color: #3CAB900D;
+  padding: 2rem;
+  font-family: "inter", sans-serif;
+}
+
+.valueCard h2 {
+  color: #101828;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.25rem 0;
+}
+
+.valueCard p {
+  color: #475467;
+  font-size: 1rem;
+  line-height: 24px;
+}
+/* testimonial section */
+.testimonialSection {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonialText {
+  font-family: "inter", sans-serif;
+  color: #1C1C1C;
+  width: 100%;
+}
+
+.testimonialText h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1.5rem 0;
+}
+
+.testimonialText p {
+  font-size: 1.125rem;
+}
+
+.testimonialCards {
+  display: flex;
+  background-color: #3CAB900F;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+
+.dotsBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 1.5rem 0;
+}
+
+.dotsBar h4 {
+  color: #3CAB90;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.testimonialCardText {
+  font-family: "inter", sans-serif;
+  color: #101828;
+  font-size: 1.5rem;
+  padding: 0 0 5rem 0;
+}
+
+.testimonialCardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoImg {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "inter", sans-serif;
+}
+
+.infoImg > div > h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1C1C1C;
+}
+
+.infoImg > div > p {
+  font-size: 1rem;
+  color: #1C1C1C;
+}
+/* footer */
+footer {
+  background-color: #283646;
+  padding: 5rem 9.375rem;
+  width: 100%;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footerList, .footerMenu {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerList {
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.footerMenu > li > a {
+  color: #FFF;
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: end;
+  gap: 1rem;
+}
+
+.subscribe p {
+  color: #FFF;
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+}
+
+.subscribeContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #B3BDC7; 
+  border-radius: 2.375rem;
+  width: 100%;
+  height: 3rem; 
+  background-color: #FFFFFF17; 
+  font-family: "inter", sans-serif;
+}
+
+.subscribeInput {
+  border: none; 
+  outline: none;
+  padding-left: 1.25rem;
+  flex: 1; 
+  font-size: 1rem; 
+  color: #92989F; 
+  background-color: transparent;
+}
+
+.subscribeButton {
+  background-color: #FFBB1C; 
+  color: #fff; 
+  border: none;
+  border-radius: 2.375rem; 
+  padding: .75rem 2.125rem; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  width: 40%;
+  height: 100%;
+}
+
+.subscribeButton:hover {
+  background-color: #ffbb1cd7;
+}
+
+.footerLine {
+  width: 100%;
+  height: 2px;
+  border: 1px solid #71777D;
+  margin: 2.5rem 0;
+}
+
+.supMenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.supMenu p, .supMenu a {
+  font-family: "inter", sans-serif;
+  font-size: .75rem;
+  color: #92989F;
+}
+/* media queries */
+@media  screen and (max-width: 375px) {
+  .menu{
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+  }
+  .itemsContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactContainer{
+    flex-direction: column;
+    justify-content: center;
+    text-align-last: center;
+  }
+  .heroSection{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .textSec{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+  .textSec h2{
+    font-size: 1.5rem;
+  }
+  .textSec p{
+    font-size: 1rem;
+  }
+  .btnContainer{
+    flex-direction: row;
+  }
+  .btnCall, .btnRequest{
+    font-size: .75rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .introSection{
+    padding: 1rem 2rem;
+    flex-direction: column;
+  }
+  .introImg img{
+    width: 100%;
+  }
+  .introImg::before{
+    bottom: 1rem;
+    left: -2rem;
+    width: 6rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .banner-content{
+    padding-top: 1rem;
+  }
+  .kitsText{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-top: 2rem;
+  }
+  .kitsText h2{
+    font-size: 1.5rem;
+  }
+  .kitsText p{
+    font-size: .75rem;
+  }
+  .kitsCards{
+    flex-direction: column;
+  }
+  .kitCard{
+    width: 100%;
+  }
+  .repairSection{
+    background-size: cover;
+    padding: 0;
+  }
+  .repairBanner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .repairBanner h2{
+    font-size: 1rem;
+  }
+  .repairBanner p{
+    font-size:.75rem;
+    line-height: normal;
+  }
+  .gridSection, .valueSection{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .gridContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .gridCards, .gridText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .valueCards{
+    flex-direction: column;
+  }
+  .testimonialSection{
+    padding: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  footer{
+    padding: 0;
+  }
+  .footerLogo{
+    flex-direction: column;
+  }
+  .footerList, .footerMenu{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerList{
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .footerMenu{
+    align-items: center;
+  }
+  .subscribe{
+    align-items: center;
+    margin-top: .5rem;
+  }
+  .supMenu{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: .5rem;
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 768px) {
+  .menu{
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+  }
+  .itemsContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactContainer{
+    flex-direction: column;
+    justify-content: center;
+    text-align-last: center;
+  }
+  .heroSection{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .textSec{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+  .textSec h2{
+    font-size: 1.5rem;
+  }
+  .textSec p{
+    font-size: 1.1rem;
+  }
+  .btnContainer{
+    flex-direction: row;
+  }
+  .btnCall, .btnRequest{
+    font-size: .75rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .introSection{
+    padding: 1rem 2rem;
+    flex-direction: column;
+  }
+  .introImg img{
+    width: 100%;
+  }
+  .introImg::before{
+    bottom: 1rem;
+    left: -2rem;
+    width: 6rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .banner-content{
+    padding-top: 1rem;
+  }
+  .kitsText{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-top: 2rem;
+  }
+  .kitsText h2{
+    font-size: 1.5rem;
+  }
+  .kitsText p{
+    font-size: .75rem;
+  }
+  .kitsCards{
+    flex-direction: column;
+  }
+  .kitCard{
+    width: 100%;
+  }
+  .repairSection{
+    background-size: cover;
+    padding: 0;
+  }
+  .repairBanner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .repairBanner h2{
+    font-size: 1rem;
+  }
+  .repairBanner p{
+    font-size:.75rem;
+    line-height: normal;
+  }
+  .gridSection, .valueSection{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .gridContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .gridCards, .gridText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .valueCards{
+    flex-direction: column;
+  }
+  .testimonialSection{
+    padding: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  footer{
+    padding: 0;
+  }
+  .footerLogo{
+    flex-direction: column;
+  }
+  .footerList, .footerMenu{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerList{
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .footerMenu{
+    align-items: center;
+  }
+  .subscribe{
+    align-items: center;
+    margin-top: .5rem;
+  }
+  .supMenu{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: .5rem;
+  }
+}
+@media screen and (min-width: 769px) and ( max-width: 1024px) {
+  .menu{
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+  }
+  .itemsContainer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactContainer{
+    flex-direction: column;
+    justify-content: center;
+    text-align-last: center;
+  }
+  .heroSection{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .textSec{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+  .textSec h2{
+    font-size: 2rem;
+  }
+  .textSec p{
+    font-size: 1.5rem;
+  }
+  .btnContainer{
+    flex-direction: row;
+  }
+  .btnCall, .btnRequest{
+    font-size: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .introSection{
+    padding: 1rem 2rem;
+    flex-direction: column;
+  }
+  .introImg::before{
+    bottom: 1rem;
+    left: -2rem;
+    width: 13rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .banner-content{
+    padding-top: 2rem;
+  }
+  .kitsText{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-top: 2rem;
+  }
+  .kitsText h2{
+    font-size: 1.5rem;
+  }
+  .kitsText p{
+    font-size: .75rem;
+  }
+  .kitsCards{
+    flex-direction: row;
+  }
+  .kitCard{
+    width: 45%;
+  }
+  .repairSection{
+    background-size: cover;
+    padding: 0;
+  }
+  .repairBanner {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .repairBanner h2{
+    font-size: 1.5rem;
+  }
+  .repairBanner p{
+    font-size:1rem;
+    line-height: normal;
+  }
+  .gridSection, .valueSection{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .gridContainer{
+    padding: auto;
+    margin: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gridText h2{
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .gridText{
+    width: 100%;
+  }
+  .gridCards{
+    width: 45%;
+  }
+  .valueCards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .valueCard{
+    width: 45%;
+  }
+  .testimonialSection{
+    padding: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  footer{
+    padding: 0;
+  }
+  .footerLogo{
+    flex-direction: row;
+  }
+  .footerList, .footerMenu{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerList{
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .footerMenu{
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribe{
+    align-items: center;
+    margin-top: .5rem;
+    padding-right: 1rem;
+  }
+  .supMenu{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: .5rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .menu{
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+  }
+  .itemsContainer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactContainer{
+    flex-direction: column;
+    justify-content: center;
+    text-align-last: center;
+  }
+  .heroSection{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .textSec{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+  .textSec h2{
+    font-size: 2rem;
+  }
+  .textSec p{
+    font-size: 1.5rem;
+  }
+  .btnContainer{
+    flex-direction: row;
+  }
+  .btnCall, .btnRequest{
+    font-size: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .introSection{
+    padding: 1rem 2rem;
+    flex-direction: column;
+  }
+  .introImg::before{
+    bottom: 1rem;
+    left: -2rem;
+    width: 13rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .banner-content{
+    padding-top: 2rem;
+  }
+  .kitsText{
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin-top: 2rem;
+  }
+  .kitsText h2{
+    font-size: 1.5rem;
+  }
+  .kitsText p{
+    font-size: .75rem;
+  }
+  .kitsCards{
+    flex-direction: row;
+  }
+  .kitCard{
+    width: 45%;
+  }
+  .repairSection{
+    background-size: cover;
+    padding: 0;
+  }
+  .repairBanner {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .repairBanner h2{
+    font-size: 1.5rem;
+  }
+  .repairBanner p{
+    font-size:1rem;
+    line-height: normal;
+  }
+  .gridSection, .valueSection{
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .gridContainer{
+    padding: auto;
+    margin: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gridText h2{
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .gridText{
+    width: 100%;
+  }
+  .gridCards{
+    width: 45%;
+  }
+  .valueCards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .valueCard{
+    width: 45%;
+  }
+  .testimonialSection{
+    padding: 0;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  footer{
+    padding: 0;
+  }
+  .footerLogo{
+    flex-direction: row;
+  }
+  .footerList, .footerMenu{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerList{
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .footerMenu{
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribe{
+    align-items: center;
+    margin-top: .5rem;
+    padding-right: 1rem;
+  }
+  .supMenu{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: .5rem;
+  }
+}
