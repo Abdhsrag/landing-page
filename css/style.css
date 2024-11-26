@@ -839,6 +839,12 @@ footer {
     align-items: center;
     margin-top: .5rem;
   }
+  .subscribeInput{
+    font-size: .75rem;
+  }
+  .subscribeButton{
+    font-size:.75rem;
+  }
   .supMenu{
     flex-direction: column;
     gap: 1rem;
